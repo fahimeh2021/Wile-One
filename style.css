@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+header {
+  overflow: hidden;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.outline {
+  display: flex;
+  gap: 15px;
+  margin-left: auto;
+  cursor: pointer;
+}
+.outline span {
+  font-size: 40px;
+  opacity: 70%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: Roboto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  padding: 30px 65px;
+}
+.hamburger {
+  display: none;
+}
+.logo-text {
+  font-weight: 500;
+  font-size: 28px;
+}
+
+.navbar {
+  display: flex;
+  gap: 35px;
+  font-size: 16px;
+}
+.navbar li {
+  border-bottom: 2px solid #fff;
+  transition: border-bottom 0.4s;
+}
+.navbar li:hover {
+  border-bottom: 2px solid #000;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 50px 50px;
+}
+
+.hero img {
+  height: 534px;
+}
+
+.hero-content {
+  width: 450px;
+}
+
+.hero h2 {
+  font-weight: 700;
+  font-size: 42px;
+  padding-bottom: 30px;
+}
+
+.hero p {
+  line-height: 1.5;
+}
+.introduction {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000;
+  color: #fff;
+  padding: 50px 130px;
+  margin-top: 50px;
+}
+
+.intro-image {
+  height: 534px;
+}
+
+.intro-content {
+  width: 450px;
+}
+
+.intro-content h2 {
+  font-weight: 700;
+  font-size: 42px;
+  padding-bottom: 30px;
+}
+
+.intro-content p {
+  line-height: 1.5;
+}
+.description {
+  display: flex;
+  background-color: #e7ceb5;
+}
+.des-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.des-content {
+  padding-bottom: 50px;
+  justify-content: center;
+}
+.email-text {
+  display: flex;
+  padding-bottom: 20px;
+}
+.email-input {
+  display: flex;
+}
+.email-input input {
+  border: none;
+  outline: none;
+  padding: 5px;
+}
+.emial-input input:focus {
+  border: solid 2px;
+}
+.email-input button {
+  border: none;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.footer {
+  background-color: #f0e9e4;
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+}
+.menus {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu h3 {
+  margin-bottom: 15px;
+  font-weight: 500px;
+}
+
+.menu li {
+  padding-bottom: 10px;
+}
+
+.menu li:hover {
+  opacity: 0.8;
+}
+.info {
+  margin-left: 50px;
+  width: 200px;
+}
+.info li {
+  padding-top: 17px;
+}
+.info li a {
+  width: 200px;
+}
+.menu li {
+  padding-top: 10px;
+}
+.help li {
+  padding-top: 17px;
+}
+.menu {
+  padding-left: 50px;
+  padding-bottom: 80px;
+  padding-right: 150px;
+  width: 287px;
+}
+.help {
+  width: 200px;
+  margin-left: 100px;
+}
+.media {
+  width: 400px;
+  justify-content: center;
+  align-items: center;
+  padding-left: 100px;
+}
+.media h3 {
+  margin-bottom: 20px;
+}
+.media p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 25px;
+}
+.media button {
+  width: 200px;
+  height: 40px;
+  background-color: #000;
+  color: #fff;
+}
+.media-icon {
+  padding-bottom: 40px;
+  display: flex;
+  gap: 20px;
+}
+.footer {
+  padding-top: 70px;
+}
+
+@media only screen and (max-width: 992px) {
+  .outline .person {
+    display: none;
+  }
+  .outline .search {
+    display: none;
+  }
+  .navbar {
+    display: none;
+  }
+  header {
+    gap: 0px;
+  }
+  .hamburger {
+    display: inline;
+  }
+  .logo-text {
+    font-size: 24px;
+    flex-grow: 1;
+    text-align: center;
+  }
+  .hero {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2px;
+  }
+  .hero-content {
+    order: 1;
+  }
+  .introduction {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .description {
+    flex-direction: column;
+  }
+  .des-content {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+  }
+
+  .footer {
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 5px;
+  }
+  .menus {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding-bottom: 10px;
+  }
+  .help {
+    margin-left: 0px;
+    width: 226px;
+  }
+  .menu {
+    padding-right: 18px;
+    padding-left: 18px;
+    width: 226px;
+    padding-bottom: 20px;
+  }
+  .info {
+    margin-left: 0px;
+    width: 228px;
+  }
+  .media {
+    padding-left: 18px;
+  }
+}
